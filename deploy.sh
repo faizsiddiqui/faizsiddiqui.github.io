@@ -6,6 +6,7 @@ set -e
 printf "\033[0;32mDeploying updates to GitHub...\033[0m\n"
 
 # Build the project.
+git submodule add -b master git@github.com:faizsiddiqui/faizsiddiqui.github.io.git public
 hugo -t hello-friend-ng
 
 # Go To Public folder
@@ -23,3 +24,4 @@ git commit -m "$msg"
 
 # Push source and build repos.
 git push origin master
+rm -rf public
