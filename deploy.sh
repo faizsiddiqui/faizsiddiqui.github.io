@@ -12,16 +12,17 @@ hugo -t hello-friend-ng
 # Go To Public folder
 cd public
 
-# Add changes to git.
-git add .
-
 # Commit changes.
-msg="rebuilding site $(date)"
+msg="Rebuilding site $(date)"
 if [ -n "$*" ]; then
 	msg="$*"
 fi
-git commit -m "$msg"
+git commit -am "$msg"
 
 # Push source and build repos.
 git push origin master
+
+# Remove public directory from develop
+cd ../
 rm -rf public
+git rm -r public

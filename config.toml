@@ -13,14 +13,24 @@ theme = "hello-friend-ng"
   keywords = "tech, devops, architecture, development, programming, linux"
   images = [""]
 
+  homeSubtitle = "I Like to <code>Things</code>"
+
   # Directory name of your blog content (default is `content/posts`)
   contentTypeName = "posts"
   # Default theme "light" or "dark"
   defaultTheme = "light"
 
+  [[params.social]]
+    name = "github"
+    url  = "https://github.com/faizsiddiqui"
+
+  [[params.social]]
+    name = "linkedin"
+    url  = "https://www.linkedin.com/in/faizsiddiqui/"
+
 [languages]
   [languages.en]
-    title = "Faiz Siddiqui"
+    title = "Hello, I'm Faiz"
     subtitle = "Personal Blog"
     keywords = ""
     copyright = ""
