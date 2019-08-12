@@ -39,19 +39,19 @@ theme = "hello-friend-ng"
       [[languages.en.menu.main]]
         identifier = "about"
         name = "About"
-        url = "/about"
+        url = "about/"
       [[languages.en.menu.main]]
         identifier = "blog"
         name = "Blog"
-        url = "/posts"
+        url = "posts/"
 
 # And you can even create generic menu
 [menu]
   [[menu.main]]
     identifier = "about"
     name       = "About"
-    url        = "/about"
+    url        = "about/"
   [[menu.main]]
     identifier = "blog"
     name       = "Blog"
-    url        = "/posts"
+    url        = "posts/"
